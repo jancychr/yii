@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Parent Portal</title>
+<link href="css/main-style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/effect1.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="jquery.min.js"></script>
+<script>
+$(window).scroll(function () {
+    $("body").animate({"background-position":"50% " + ($(this).scrollTop() / 2) + "px"},{queue:false, duration:500});
+});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#back-to-top").hide();
+	$(function () {
+		$(window).scroll(function(){
+		if ($(window).scrollTop()>200){
+		$("#back-to-top").fadeIn(500);
+		}
+		else
+		{
+		$("#back-to-top").fadeOut(500);
+		}
+		});
+		//back to top
+		$("#back-to-top").click(function(){
+		$('body,html').animate({scrollTop:0},1000);
+		return false;
+		});
+		$('a[href*=#]').click(function(event){
+			$('html, body').animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top -60
+			}, 1000);
+			event.preventDefault();
+		});
+		});
+		});
+		
+</script>
+<script type="text/javascript">
+	$(document).on("scroll",function(){
+		if($(document).scrollTop()>300){ 
+			$("header").removeClass("large").addClass("small");
+			}
+		else{
+			$("header").removeClass("small").addClass("large");
+			}
+		});
+</script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<link rel="stylesheet" type="text/css" href="css/set2.css" />
+<link rel="stylesheet" href="css/animations.css" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="top" class="demo-1">
+<div id="ip-container" class="ip-container">
+<!-- initial header -->
+<header class="ip-header">
+	<div class="ip-logo">
+		<img src="images/logo.png" width="188" height="16" />
+	</div>
+	<div class="ip-loader">
+		<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+			<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+			<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+		</svg>
+	</div>
+</header>
+<p id="back-to-top"><a href="#top"><span></span></a></p>
+<div class="header">
+<div class="wrapper header1">
+	<div class="head">
+	<header class="large">
+		<div class="logo"><img src="images/logo-white.png" width="188" height="16" /></div>
+		<div class="menu">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">How it works</a></li>
+			<li><a href="#">Find your school</a></li>
+			<li><a href="#">Resources</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Login</a></li>
+			<li class="last-menu"><a href="#">Sign up for free</a></li>
+		</div>
+		</header>
+		<div class="banner-box">
+			<div class="animatedParent" data-sequence="500">
+				<h1 class="animated bounceInRight slower" data-id="7">Build your own</h1>
+				<h1 class="animated bounceInRight font2" data-id="8">private community of parents </span></h1>
+				<h1 class="animated bounceInRight font3" data-id="9">from your child's school</h1>
+				<span class="animated fadeIn" data-id="10">&nbsp;</span>
+				<span class="animated fadeIn" data-id="11">&nbsp;</span>
+				<div class="ban-imag"><span class="animated fadeIn" data-id="12">Collaborate.</span> <span class="animated fadeIn" data-id="13">Communicate.</span> <span class="animated fadeIn" data-id="14">Share</span></div>
+				<div class='animated fadeIn findMe' data-id='15'><a href="#feature1">Learn More</a></div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+	<div class="search">
+		<div class="wrapper">
+			<input type="text" />
+			<input type="text" />
+			<a href="#"><i></i>Find My School</a>
+		</div>
+	</div>
+	<div class="banner slide" id="slide2" data-parallax="scroll" data-image-src="images/banner.jpg"></div>
+<div class="tabber">
+	<div class="tabs">
+		<div class="wrapper">
+			<a href="#">Featured Schools</a>
+			<a href="#">Popular Schools</a>
+			<a href="#">Most Reviewed</a>
+		</div>
+	</div>
+	<ul>
+		<div class="left-arrow"><img src="images/arrow-left.jpg" /></div>
+		<div class="right-arrow"><img src="images/arrow-right.jpg"/></div>
+		<li>
+		<div class="grid">
+			<figure class="effect-jazz">
+				<a href="#">
+				<img src="images/tab-image1.jpg" alt="img23"/>
+				<figcaption>
+				<div class="white-bg">
+					<h2>Lennon Elementary</h2>
+					<p>Fremont, California</p>
+				</div>
+				</figcaption>	
+				</a>		
+			</figure>
+		</div>
+		</li>
+		<li>
+		<div class="grid">
+			<figure class="effect-jazz">
+			<a href="#">
+				<img src="images/tab-image3.jpg" alt="img23"/>
+				<figcaption>
+				<div class="white-bg">
+					<h2>Norris High School</h2>
+					<p>Fremont, California</p>
+				</div>
+				</figcaption>
+			</a>			
+			</figure>
+		</div>
+		</li>
+		<li>
+		<div class="grid">
+			<figure class="effect-jazz">
+			<a href="#">
+				<img src="images/tab-image4.jpg" alt="img23"/>
+				<figcaption>
+					<h2>Mattos Jr. Highschool</h2>
+					<p>Fremont, California</p>
+				</figcaption>
+			</a>			
+			</figure>
+		</div>
+		</li>
+	</ul>
+</div>
+<div class="testimonials">
+<div class="slide" id="slide1" data-parallax="scroll" data-image-src="images/testimonial-people.jpg">
+<h1>Testimonials</h1>
+<img src="images/testimonial-content.png" /> 
+</div>
+</div>
+
+<div class="linker" id="feature1"></div>
+<div class="wrapper">
+<div class="features">
+	<h1>Features</h1>
+	<div class="feature">
+		<div class="feature-image wow fadeInLeft animated"><div class="grid">
+		<figure class="effect-duke">
+			<img src="images/feature-img1.jpg" />
+		</figure>
+		</div></div>
+		<div class="feature-content wow fadeInRightBig animated">
+			<h2>Communities around your school</h2>
+			<p>Share homework, projects and other school-related information with parents from your child's school. Multiple kids? No problem. One school community for each child, with organized and categorized information for each school/child.</p>
+		</div>
+	</div>
+	<div class="feature">
+		<div class="feature-content wow fadeInLeft animated" style="float:left; width:48%;">
+			<h2>Communities outside the school</h2>
+			<p>Parent collaboration does not stop at school. You can create your own private groups or micro-communities for activities outside school too. Now your daughter's Girls Scout group and your son's Soccer group, along with your school communities, can all live happily together in one place.</p>
+		</div>
+		<div class="feature-image wow fadeInRightBig animated" style="float:right; margin-right:0;"><div class="grid">
+		<figure class="effect-duke">
+			<img src="images/feature-img2.jpg" />
+		</figure>
+		</div></div>
+	</div>
+	<div class="feature">
+		<div class="feature-image wow fadeInLeft animated"><div class="grid">
+		<figure class="effect-duke">
+			<img src="images/feature-img3.jpg" />
+		</figure>
+		</div></div>
+		<div class="feature-content wow fadeInRightBig animated">
+			<h2>Safety - peace of mind</h2>
+			<p>Safety of kids and families is our highest priority. We do not permit anybody and everybody to join the community. Only those parents whose profiles and information are verified are allowed to participate in the community.</p>
+		</div>
+	</div>
+	<div class="feature">
+		<div class="feature-content wow fadeInLeft animated" style="float:left; width:48%;">
+			<h2>Recommendations are just a click away</h2>
+			<p>Looking for a recommendation for an after-school activity for your child or for carpool help? Browse parent recommendations for various services or just reach out to your community and ask for one.</p>
+		</div>
+		<div class="feature-image wow fadeInRightBig animated" style="float:right; margin-right:0;"><div class="grid">
+		<figure class="effect-duke">
+			<img src="images/feature-img4.jpg" />
+		</figure>
+		</div></div>
+	</div>
+	<div class="feature">
+		<div class="feature-image wow fadeInLeft animated"><div class="grid">
+		<figure class="effect-duke">
+			<img src="images/feature-img5.jpg" />
+		</figure>
+		</div></div>
+		<div class="feature-content wow fadeInRightBig animated">
+			<h2>Helpful updates from your local community</h2>
+			<p>Put an end to newsletter subscriptions and website bookmarks.  Now you can find information on local family events, volunteering opportunities and other helpful updates, all in one place.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="footer">
+	<div class="wrapper">
+		<img src="images/footer.png"/>
+	</div>
+</div>
+</div>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/pathLoader.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/css3-animate-it.js"></script>
+<script src="js/wow-animate.js"></script>
+<script>
+wow = new WOW(
+  {
+	animateClass: 'animated',
+	offset:       100
+  }
+);
+wow.init();
+</script>
+</body>
+</html>
